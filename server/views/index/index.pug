@@ -1,0 +1,32 @@
+extends ../layout/index
+block slider
+    .slider
+        h1 Rio de Janeiro
+        em aventura
+    
+block contenido
+    main.container.mt-5
+        h2.text-center.mb-5 Sobre Nosotros
+        .row.mb-5
+            .col-md-6
+                p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, consequuntur omnis beatae ab nam voluptatem, quam dicta adipisci earum vel aperiam sint accusantium illum itaque ut, iure officiis quod minus.
+
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet mollitia a, laudantium nisi in unde repudiandae dolorem rem dolorum quas, quae quibusdam deserunt. Eligendi, dolorem perspiciatis optio ducimus quod molestias!
+            .col-md-6
+                img(src="img/inicio_nosotros.jpg", alt="image", class="img-fluid")
+
+        h2.text-center.mb-5 Próximos Viajes
+        include ../layout/partials/viajes
+
+    .descuento
+        .container
+            .row
+                .col-md-6
+                    .contenido
+                        h3 5% de Descuento
+                        p.titulo Viaje a Canadá
+                        p.fecha 18 de Enero del 2021 - 30 de Enero del 2021
+                        p.precio S/. 5000.00
+    .container
+        h2.text-center.my-5 Testimoniales
+        include ../layout/partials/testimoniales
